@@ -12,6 +12,7 @@ function draw_one_frame(words, vocal, drum, bass, other,counter) {
     let cury = map(i, 0, numStripes-1, 0, height);
     rect(0, cury, width, stripeWidth);
   }
+  
 
   let triangleHeight = map(bass, 40, 100, 200, 550, true);
   fill(117,200,174); // teal

@@ -1,5 +1,5 @@
-const canvasWidth = 540;
-const canvasHeight = 960;
+const canvasWidth = 1920;
+const canvasHeight = 1020;
 
 
 let mainCanvas;
@@ -27,8 +27,8 @@ function songLoaded() {
   songLoadStatus = "loaded";
   songButton.elt.innerHTML = "run song";
   songButton.elt.disabled = false;
-  // let now = millis();
-  // songEpoch = now + 5000;
+  let now = millis();
+  songEpoch = now + 5000;
   if(debugFastRefresh && getAudioContext().state != "suspended"){
     switchRunMode()
   }
